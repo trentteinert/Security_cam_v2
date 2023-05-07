@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Optional: Hide scrollbar but keep scrolling functionality */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+:root {
+  --foreground: rgb(0, 0, 0);
+
+  --background: rgb(255, 255, 255);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: rgb(36, 36, 36);
+
+    --background: rgb(241, 241, 241);
+  }
+}
+
+body {
+  background-color: var(--background);
+}
+h1,
+p,
+ul,
+li,
+button {
+  color: var(--foreground);
+}
