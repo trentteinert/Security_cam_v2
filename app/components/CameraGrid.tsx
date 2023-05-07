@@ -71,9 +71,7 @@ function CameraGrid() {
       </div>
       {selectedCamera && (
         <div className='relative lg:ml-[5%] m-auto lg:w-[60%] w-[95%]'>
-          <Image
-            width={1080}
-            height={720}
+          <img
             className='w-[100%] mx-auto p-2 px-0 pb-0 pt-3 object-cover object-left-top'
             src={`${selectedCamera.imageUrl}?t=${lastUpdate}`}
             alt='/'
@@ -91,10 +89,8 @@ function CameraGrid() {
         {cameraList.map((camera) => (
           <div key={camera.id} className='container'>
             <div onClick={() => scrollToTop(camera)}>
-              <Image
+              <img
                 className='w-full md:h-[250px] lg:h-[350px] xl:h-[400px] object-cover object-left-top'
-                width={400}
-                height={300}
                 src={`${camera.imageUrl}?t=${lastUpdate}`}
                 alt={camera.name}
               />
