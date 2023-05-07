@@ -50,20 +50,20 @@ function CameraGrid() {
 
   return (
     <div>
-      <div className='flex align-middle w-[90%] mx-auto mt-4 mb-0 gap-10'>
-        <h1 className='font-bold text-2xl leading-none'>
+      <div className='flex align-middle w-[90%] mx-auto mt-4 mb-0 md:gap-10 gap-2'>
+        <h1 className='font-bold sm:text-2xl text-lg leading-tight'>
           &quot;POST&quot; - NYC Security
         </h1>
         <div className='flex gap-4'>
           <button
-            className='translate-y-[2px] px-2 rounded-md border hover:text-red-400'
+            className='translate-y-[2px] px-2 rounded-md border hover:text-red-400 m-auto'
             onClick={handleRefreshClick}
           >
             Refresh
           </button>
           <Link
             href={'/info'}
-            className='translate-y-[2px] px-2 rounded-md border hover:text-red-400'
+            className='translate-y-[2px] px-2 rounded-md border hover:text-red-400 m-auto'
           >
             Info
           </Link>
