@@ -1,7 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import cameras from './Cameras';
-import Image from 'next/image';
 import Link from 'next/link';
 
 interface Camera {
@@ -169,7 +168,7 @@ function CameraGrid() {
       )}
 
       <ul className='grid sm:grids-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 w-[90%] mt-4 mx-auto'>
-        {randomizedCameraList.map((camera) => (
+        {randomizedCameraList.map((camera, index) => (
           <div key={camera.id} className='container'>
             <div onClick={() => scrollToTop(camera)}>
               <img
@@ -179,7 +178,10 @@ function CameraGrid() {
               />
             </div>
             <div className='camera-info'>
-              <p className='font-bold text-lg'>{camera.area}</p>
+              <p className='font-bold text-lg'>
+                {cameras.findIndex((c) => c.id === camera.id) + 1}.{' '}
+                {camera.area}
+              </p>
               <h2 className='font-semibold text-sm'>{camera.name}</h2>
             </div>
           </div>
