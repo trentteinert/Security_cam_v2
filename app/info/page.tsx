@@ -9,7 +9,7 @@ export default function Home() {
       </div>
       <main className='align-middle w-[90%] mx-auto mt-4 mb-0'>
         <p className='text-sm translate-x-1'>May 5th, 2023</p>
-        <p className='text-sm translate-x-1'>by Trenton Teinert</p>
+        <p className='text-sm translate-x-1'>by ______-______</p>
         <div className='pt-4'>
           <p className='text-sm sm:w-[400px] text-justify'>
             &quot;POST&quot; is a thought-provoking project that delves into the
