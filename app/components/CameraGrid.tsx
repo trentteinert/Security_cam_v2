@@ -95,7 +95,7 @@ function CameraGrid() {
   };
 
   return (
-    <div>
+    <div className='mb-20'>
       <div className='block md:flex align-middle w-[90%] mx-auto mt-4 mb-0 md:gap-10 gap-2'>
         <h1 className='font-bold sm:text-2xl text-lg leading-tight'>
           &quot;POST&quot; - NYC Security
@@ -140,7 +140,7 @@ function CameraGrid() {
             src={`${selectedCamera.imageUrl}?t=${lastUpdate}`}
             alt={selectedCamera.name}
           />
-          <div className='absolute bottom-0 left-0 p-2 py-0 text-white bg-black text-xl font-bold'>
+          <div className='absolute bottom-0 left-0 p-2 py-0 text-white bg-black md:text-xl text-sm font-bold'>
             Camera{' '}
             {cameras.findIndex((camera) => camera.id === selectedCamera?.id) +
               1}

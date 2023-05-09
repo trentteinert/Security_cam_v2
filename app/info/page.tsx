@@ -12,21 +12,19 @@ export default function Home() {
         <p className='text-sm translate-x-1'>by ______-______</p>
         <div className='pt-4'>
           <p className='text-sm sm:w-[400px] text-justify'>
-            &quot;POST&quot; is a thought-provoking project that delves into the
-            network of nearly 1000 security cameras dispersed across all five
-            boroughs of NYC. Through the lens of these cameras, the project
-            explores the impact of surveillance on personal movement and
-            creativity within the urban landscape, as well as the psychological
-            and emotional effects on individuals. Inspired by the film
-            &quot;Those Who Jump&quot; and incorporating similar techniques, the
-            project provides a broader context to the viewer, highlighting the
-            inherent voyeuristic nature of surveillance. The project raises
-            critical questions about the ethics of surveillance and the
-            implications of bringing a camera into private spaces. By
-            scrutinizing the contradictions within our urban surroundings,
-            &quot;POST&quot; encourages viewers to reflect on their own
-            experiences and provokes essential questions about personal freedom
-            and societal control.
+            &quot;POST&quot; is a project for educational purposes only that
+            looks into the network of nearly 1000 security cameras dispersed
+            across all five boroughs of NYC. Through the lens of these cameras,
+            the project explores the impact of surveillance on personal movement
+            and creativity within the urban landscape, as well as the
+            psychological and emotional effects on individuals. Inspired by the
+            film &quot;Those Who Jump&quot; and incorporating similar
+            techniques, the project provides a broader context to the viewer,
+            highlighting the inherent voyeuristic nature of surveillance. The
+            project raises critical questions about the ethics of surveillance
+            and the implications of bringing a camera into private spaces,
+            encouraging viewers to reflect on their own experiences and provokes
+            essential questions about personal freedom and societal control.
           </p>
         </div>
       </main>
