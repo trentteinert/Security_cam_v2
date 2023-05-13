@@ -15,9 +15,7 @@ interface Camera {
 
 function FullScreenCamera({ playId }: any) {
   const [lastUpdate, setLastUpdate] = useState<number>(Date.now());
-  const [selectedCamera, setSelectedCamera] = useState<Camera>(
-    cameras[playId - 1]
-  );
+  const [selectedCamera, setSelectedCamera] = useState<Camera>(cameras[playId]);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
