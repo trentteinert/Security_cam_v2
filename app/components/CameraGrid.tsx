@@ -30,7 +30,7 @@ function CameraGrid() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setLastUpdate(Date.now());
-    }, 500);
+    }, 2000);
 
     return () => clearInterval(intervalId);
   }, []);

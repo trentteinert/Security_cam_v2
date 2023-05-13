@@ -15,19 +15,30 @@ interface Camera {
 
 function FullScreenCamera({ playId }: any) {
   const [lastUpdate, setLastUpdate] = useState<number>(Date.now());
-  const [selectedCamera, setSelectedCamera] = useState<Camera>(cameras[playId]);
+  const [selectedCamera, setSelectedCamera] = useState<Camera | null>(null);
 
   useEffect(() => {
+    const camera = cameras[playId - 1];
+    if (!camera) {
+      alert('Not a valid camera');
+      return;
+    }
+    setSelectedCamera(camera);
+
     const intervalId = setInterval(() => {
       setLastUpdate(Date.now());
     }, 500);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [playId]);
 
   const handleRefreshClick = () => {
     setLastUpdate(Date.now());
   };
+
+  if (!selectedCamera) {
+    return null;
+  }
 
   return (
     <div className='bg-black h-screen'>
