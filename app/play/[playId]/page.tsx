@@ -1,5 +1,4 @@
 import FullScreenCamera from '@/app/components/FullScreenCamera';
-import '@/app/page.module.css';
 
 interface PageProps {
   params: {
